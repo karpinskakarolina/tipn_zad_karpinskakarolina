@@ -1,11 +1,13 @@
 ---
 title: Super Mario Bros.
+author: Karolina Karpińska
 output:
   html_document:
     theme: "paper"
     highlight: "zenburn"
 ---
 
+## **Super Mario Bros.**
 ### *jap. スーパーマリオブラザーズ*
 
 _**Komputerowa gra platformowa wyprodukowana w 1985 roku przez Nintendo.Super Mario Bros., stworzona w dużej mierze przez Shigeru Miyamoto, odniosła sukces komercyjny, spowodowany jej sprzedażą wraz z konsolą Nintendo Entertainment System.**_
