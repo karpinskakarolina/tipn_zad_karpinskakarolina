@@ -1,0 +1,80 @@
+---
+title: Super Mario Bros.
+output:
+  html_document:
+    theme: "paper"
+    highlight: "zenburn"
+---
+
+### *jap. スーパーマリオブラザーズ*
+
+_**Komputerowa gra platformowa wyprodukowana w 1985 roku przez Nintendo.Super Mario Bros., stworzona w dużej mierze przez Shigeru Miyamoto, odniosła sukces komercyjny, spowodowany jej sprzedażą wraz z konsolą Nintendo Entertainment System.**_
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Super_Mario_Bros._Logo.svg/886px-Super_Mario_Bros._Logo.svg.png)
+
+#### Rozrywka
+Głównym bohaterem Super Mario Bros., nad którym gracz przejmuje kontrolę, jest postać Mario. Jego młodszym bratem bliźniakiem, Luigim, kieruje wyłącznie drugi gracz w trybie gry wieloosobowej. Zadaniem obu bohaterów jest eksploracja krainy Mushroom Kingdom, przetrwanie w obliczu ataku sił głównego antagonisty Bowsera oraz ocalenie księżniczki Toadstool[7]. Gracz porusza się w kierunku prawej strony ekranu, aby dotrzeć do chorągiewki pojawiającej się na końcu każdego poziomu.
+
+
+#### Bohaterowie
+* Mario
+* Luigi
+* Toad
+* Peach
+
+![](http://static.tvtropes.org/pmwiki/pub/images/mp7marioandluigi_609.jpg)
+
+
+
+#### Transformacje Mario
+
+| Mario            |                                                                 | Umiejętności                                                                    |
+|------------------|-----------------------------------------------------------------|---------------------------------------------------------------------------------|
+| Small Mario      | ![](https://www.mariowiki.com/images/0/02/SMB_Smallmario.png)   | najsłabszy; podstawowa wersja                                                   |
+| Super Mario      | ![](https://www.mariowiki.com/images/f/f7/SMB_Supermario.png)   | może rozwalać bloki; wraca do małego Mario jak dotknie wroga                    |
+| Fire Mario       | ![](https://www.mariowiki.com/images/4/47/SMB_Firemario.png)    | rzuca kulami ognia                                                              |
+| Invincible Mario | ![](https://www.mariowiki.com/images/6/62/Invincible_Mario.gif) | jest niezwyciężony; odporny na przeszkody; pokonuje wrogów bez skakania na nich |
+
+
+
+#### Wrogowie
+
+1. Groomba - Goomby mają tylko nogi. Wielu z Goomb to poddani Bowsera. Aby pokonać Goombę należy go po prostu rozdeptać.
+![](https://vignette.wikia.nocookie.net/smbpediaxd/images/9/91/Goomba.jpg/revision/latest/scale-to-width-down/180?cb=20120305193601&path-prefix=pl)
+2. Spiny - Spiny to czworonożny Koopa Troopa, który zadebiutował w Super Mario Bros. Najczęściej wyrzucają je Lakitu w nieskończonych ilościach, ale czasami pojawiają się, gdy nie ma ich w pobliżu.
+3. Blooper - o ośmiornicopodobne stworzenia żyjące w wodzie. Są jednymi z najbardziej odpornych przeciwników niebędących bossami. 
+![](https://vignette.wikia.nocookie.net/smbpediaxd/images/f/fb/250px-Blooper_MK7.png/revision/latest?cb=20120306185830&path-prefix=pl)
+4. Cheep-Cheep - w Japonii nazywane Pukupuku (プクプク) są rybami posiadającymi skrzydła
+5. Hammer Bro. - Są zielone, mają skorupę i zielony kask, ale rzucają młotkami, co uczyniło ich najtrudniejszymi do pokonania wrogami niebędącymi Bossem.
+6. Lakitu - to Koopa z pilotką, który siedzi na chmurce. Wyrzuca Spiny, których ma nieskończoność.
+
+
+ENJOY!: (http://pl.joy.land/super-mario-bros.html)
+
+
+
+```{r echo = TRUE }
+dzien <- 24
+miesiac <- (dzien * 30)
+rok <- (dzien * 365)
+IIrok <- ((miesiac - (8 * dzien) + (9 * miesiac)))
+III_IVrok <- (2 * rok)
+Vrok <- (6 * miesiac )
+WYNIK <- (IIrok + III_IVrok + Vrok)
+
+```
+
+
+```{r echo=TRUE, message=FALSE, warning=FALSE, paged.print=FALSE, }
+library(tidyverse)
+ggplot(data = diamonds) +
+  geom_point(mapping = aes (x = carat, y = price)) +
+  labs(title = "Diamenty", x = "karaty", y = "cena") +
+  theme_light()
+```
+
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+library(tidyverse)
+data(diamonds)
+select(diamonds, cut)
+```
