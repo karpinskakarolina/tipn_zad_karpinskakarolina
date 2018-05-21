@@ -1,0 +1,22 @@
+# Zad 4-1
+
+Mpg to zbiór danych dotyczących oszczędności paliwa 38 modeli samochodów od 1999-2008
+W zbiorze znajduje sie 11 zmiennych oraz 234 obserwacji
+engine displacement oznacza pojemnosc silnika (w litrach)
+miles per gallon oznacza ilość mil do przejechania na 1 galonie (galon jako miara objętości)
+
+ZMIENNE
+(manufacturer) - poducent
+(model) - model samochodu
+(displ) - pojemność silnika w litrach
+(year) - rok produkcji
+(cyl) - liczba cylindrów
+(trans) - rodzaj skrzyni biegów (automat/manualna)
+(drv)
+    f = front wheel drive - napęd przedni
+    r = rear wheel drive - napęd tylni
+    4 = 4wd - napęd na 4 koła
+(cty) - spalanie w mieście
+(hwy) - spalanie na autostradzie
+(fl) - rodzaj paliwa
+(class) - klasa samochodu
